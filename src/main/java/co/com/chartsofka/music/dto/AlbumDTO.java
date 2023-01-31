@@ -1,4 +1,4 @@
-package java.co.com.chartsofka.music.dto;
+package co.com.chartsofka.music.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,6 +12,4 @@ public class AlbumDTO {
     private String yearRelease;
     private String genre;
     private String artistID;
-
-
 }

@@ -1,7 +1,8 @@
-package java.co.com.chartsofka.music.service;
+package co.com.chartsofka.music.service;
 
-import java.co.com.chartsofka.music.dto.AlbumDTO;
-import java.co.com.chartsofka.music.entity.Album;
+import co.com.chartsofka.music.dto.AlbumDTO;
+import co.com.chartsofka.music.entity.Album;
+
 import java.util.List;
 
 public interface IAlbumService {
@@ -11,14 +12,14 @@ public interface IAlbumService {
     AlbumDTO entityToDTO(Album album);
 
     //Basic operate
-    List<Album> getAlbums();
+    List<AlbumDTO> getAlbums();
 
-    Album findAlbumById(String albumId);
+    AlbumDTO findAlbumById(String idAlbum);
 
     String saveAlbum(AlbumDTO albumDTO);
 
-    Album updateAlbum(AlbumDTO albumDTO);
+    AlbumDTO updateAlbum(AlbumDTO albumDTO);
 
-    String deleteAlbum(String albumId);
+    String deleteAlbum(String idAlbum);
 
 }
